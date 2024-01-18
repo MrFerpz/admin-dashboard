@@ -64,9 +64,40 @@ body {
 .material-icons {
     width: 24px;
     grid-column: 1;
+    position: relative;
+    top: 5px;
+    left: 7px;
 }
 
 .links {
     grid-column: 2;
 }
 
+#search-icon, #notifications-icon, #profile-icon {
+    font-size: 36px;
+    position: static;
+    width: 30px;
+    height: 30px;
+    margin: 12px 10px 0px 5px;
+}
+
+
+#search-bar {
+    height: 20px;
+    flex: 1;
+    border-radius: 10px;
+    border:#4f46e5 solid 3px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#search-bar:focus {
+    background-color:#e0e7ff;
+}
+
+.styled-name {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin: 12px 10px 0px 5px;
+}
