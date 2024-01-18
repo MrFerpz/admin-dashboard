@@ -9,7 +9,7 @@ body {
 }
 
 .left {
-    background-color: #39b54a;
+    background-color: #4f46e5;
     color: white;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
@@ -20,14 +20,17 @@ body {
 .right {
     display: grid;
     grid-template-rows: 100px 100px 1fr;
+    background-color: #c7d2fe;
 }
 
 .header {
     display: flex;
+    background-color: #e0e7ff;
 }
 
 .hi-there {
     display: flex;
+    background-color: #e0e7ff;
 }
 
 .main-content-container {
