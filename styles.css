@@ -43,6 +43,7 @@ body {
 .main-content-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    height: 100%;
 }
 
 .projects {
@@ -50,12 +51,9 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     place-items: center;
-}
-
-.projects > div {
-    width: 200px;
-    height: 150px;
-    border:#4f46e5 solid 2px;
+    align-items: stretch;
+    justify-items: stretch;
+    height: 100%;
 }
 
 .right-hand-sidebar {
@@ -74,6 +72,10 @@ body {
 
 .links {
     grid-column: 2;
+}
+
+.links:hover {
+    cursor: pointer;
 }
 
 #search-icon, #notifications-icon, #profile-icon {
@@ -147,8 +149,33 @@ button {
     width: 80px;
 }
 
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 .hi-text, .name-title {
     position: relative;
     top: 10px;
 }
+
+.card {
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    background-color: #a5b4fc;
+    border:#4f46e5 solid 2px;
+    border-radius: 4px;
+    margin: 0px 20px 0px 20px;
+}
+
+.card-heading {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.8rem;
+}
+
+
 
