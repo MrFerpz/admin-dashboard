@@ -10,7 +10,7 @@ body {
 
 .left {
     display: grid;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 40px minmax(130px, 1fr);
     grid-template-rows: 120px 80px repeat(4, 40px) 80px repeat(4, 40px);
     background-color: #4f46e5;
     color: white;
@@ -43,6 +43,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: calc(100vh - 130px);
+    overflow: hidden;
 }
 
 .projects {
@@ -54,6 +55,8 @@ body {
     align-items: stretch;
     justify-items: stretch;
     height: 100%;
+    overflow: auto;
+    text-wrap: wrap;
 }
 
 .right-hand-sidebar {
@@ -216,6 +219,7 @@ button:hover {
 .trending {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 50px 1fr;
     position: relative;
     bottom: 30px;
     border-radius: 4px;
@@ -226,8 +230,15 @@ button:hover {
 
 .trend {
     font-weight: bold;
-    font-size: large;
-    border-bottom: 1px dashed black;
+    font-size: 1rem;
+    margin-left: 12px;
+    position: relative;
+    top: 5px;
+}
+
+.trending > div > span {
+    font-weight: 200;
+    font-size: 0.7rem;
 }
 
 .bottom-trend {
@@ -245,5 +256,16 @@ button:hover {
     position: relative;
     top: 10px;
     left: 10px;
+}
+
+.trend-icon {
+    height: 40px;
+    width: 40px; 
+    display: inline-block; 
+    border-radius: 50%; 
+    position: relative; 
+    margin: 3px;
+    margin-left: 10px;
+    border: 1px solid black;
 }
 
